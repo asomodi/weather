@@ -1,0 +1,10 @@
+<h1>Today</h1>
+
+<div *ngIf="forecasts">
+  <p class="name">Your city: {{ forecasts.location.name }}</p>
+  <p class="country">Your Country: {{ forecasts.location.country }}</p>
+  <p class="current.condition">
+    The weather is: {{ forecasts.current.condition.text }}
+  </p>
+  <p class="current.temp">Temperature: {{ forecasts.current.temp_c }} °C</p>
+</div>
